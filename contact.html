@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    body{
+        background-color: cyan;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light"> 
+        <button class="navbar-toggler ml-auto" data-target="#a" data-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="a">
+<ul class="navbar nav" style="margin-left: 60%;">
+    <li class="nav-item">
+    <a class="nav-link" href="/A1/assignment.html">
+        Home
+    </a>    
+    </li>
+    <li  class="nav-item">
+        <a class="nav-link" href="/A1/about.html">About Us</a>
+    </li>
+
+    <li  class="nav-item">
+        <a class="nav-link" href="/A1/gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/A1/contact.html">Contact Us</a>
+    </li>
+    <li><button class=" btn btn-primary" data-target="#m1" data-toggle="modal">SignUp</button></li>
+    <li><button class="btn btn-warning ml-1"  data-target="#abc" data-toggle="modal">signIn</button></li>
+</ul>
+
+
+</div>
+</nav>
+    <h3>Contact Details</h3>
+<div class="text-success">
+  <p class="text-dark">
+    contact through mail
+  </p>  
+  <p>
+    Mail id: abcdef@contact.me</p>
+    <p class="text-dark">
+        contact through mobile
+      </p>  
+        Mobile:+91 9123456780
+</div>
+<!-- SIGHUP -->
+<div class="modal" id="m1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+<div class="modal-header">
+<h4>SignUp Page</h4>
+<button class="close" data-dismiss="modal">&times;</button>
+</div>
+      <div class="modal-body">  
+        <div class="jumbotron bg-info">
+            <div class="container border bg-light p-1 w-100">
+                <div class="row">
+                <div class="col col-6 ">
+                 <div class="form-group">
+                 <label for="a" class="form-check-label">First name</label>
+                
+                <div class="form-check">
+                    <input class="form-check-input w-100" type="text" name="User first name" placeholder="Enter first name" id="a">
+                </div>
+             </div>
+             </div>
+         
+             <div class="col col-6">
+                 <div class="form-group">
+                 <label for="a1" class="form-check-label">Last name</label>
+               <div class="form-check">
+                
+                 <input class="form-check-input w-100" type="text" name="User last name" placeholder="Enter last name" id="a1">
+             </div>
+         </div>
+         </div>
+     </div>
+     <br>
+         <div class="col">
+             <div class="form-group">
+             <label for="b" class="form-check-label">password</label>
+         
+             <div class="form-check">
+                 <input class="form-check-input w-100" type="password" placeholder="Enter Password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[&_$@^!]).{8,}" id="b" name="password" title="please enter atleast 1 lowercase ,1 uppercase, 1 special character and 1 number">
+             </div>
+         </div>
+         </div>
+     <br>
+         <div class="col">
+             <div class="form-group">
+             <label for="c" class="form-check-label">Mail</label>
+             
+                 <div class="form-check">
+         <input class="form-check-input w-100" type="email" name="Email" placeholder="enter Mail id" id="c">
+         </div>
+     </div>
+     </div>
+     <br>
+         <div class="col">
+             <div class="form-group">
+             <label for="d" class="form-check-label">DOB</label>
+             
+                 <div class="form-check">
+                 <input class="form-check-input w-100" type="date" name="Dob" id="d">
+             </div>
+         </div>
+         </div>
+     
+     <br>
+         <div class="col">
+             <div class="form-group"> 
+             <label for="">Gender</label>
+             <br>
+                 <div class="form-check-inline">
+                  <input type="radio"name="M" required="">
+                 <label for="" class="form-check-label">Male</label>
+             </div>
+                 <div class="form-check-inline">
+                 <input type="radio" class="form-check-input" name="M" required="">
+                 <label for="" class="form-check-label">Female</label>
+             </div>
+             <div class="form-check-inline">
+                 <input type="radio" class="form-check-input" name="M" required="">
+                 <label for="" class="form-check-label">Others</label>
+                
+             
+         </div>
+     </div>
+         </div>
+     <div class="col">
+     <div class="form-group">
+        <div class="form-check">
+      <input type="submit" class="btn-outline-primary btn w-100 " value="SignUp">
+     </div>
+     </div>
+     </div>
+         </div>
+        
+     </div>
+</div>
+<div class="modal-footer"> </div>
+</div>
+</div>
+</div>
+
+<!-- SIGNIN -->
+
+<div class="modal" id="abc">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+     <h1>login page</h1>
+     <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+<div class="modal-body">
+<form novalidate class="needs-verification">
+<div class="form-group">
+<input class="form-control" type="text" placeholder="enter username" name="" id="" required>
+<small class="invalid-feedback">please entr valid username</small>
+</div>
+<div class="form-group">
+<input class="form-control" type="password" name="" placeholder="enter password" id="" required>
+<small class="invalid-feedback">please enter valid password</small>
+</div>
+<!-- <div class="form-group">
+<input class="form-control" type="email" name="" id="" required>
+<small class="invalid-feedback">please enter valid email</small>
+</div>
+<div class="form-group">
+<input class="form-control" type="date" name="" id="" required>
+</div> -->
+<div class="form-group">
+<input class="btn btn-primary" type="submit" value="login"> 
+</div>
+
+</form>
+</div>
+<script>
+var v=document.querySelector('.needs-verification');
+v.addEventListener('submit',function(e){
+if(v.checkValidity()==true){
+e.preventDefault();
+e.stopPropagation();
+}
+v.classList.add('was-validated')
+//console.log(v.checkValidity(==true));
+})
+</script>
+
+        </div>
+   </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
